@@ -1,1 +1,22 @@
-
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="source.xml" url="https://https://github.com/Mathius-gamgee/Aurora/blob/main/Source.xml" />
+		</update>
+	</info>
+	<element name="Fizban's Treasury of Dragons" type="Source" source="Core" id="ID_WOTC_SOURCE_FIZBANS_TREASURY_OF_DRAGONS">
+		<description>
+			<![CDATA[<p>Discover how dragons embody magic across the worlds of D&D and how you can bring them to life at your table in this quintessential reference guide for the world’s greatest roleplaying game.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">FToD</set>
+			<set name="url">http://https://dnd.wizards.com/products/treasury-dragons</set>
+			<set name="image">https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/dkjch1825_ProductImg1.png</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="official">true</set>
+			<set name="supplement">true</set>
+			<set name="release">20211026</set>
+		</setters>
+	</element>
+</elements>
