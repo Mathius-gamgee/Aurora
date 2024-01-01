@@ -1,1 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dragonborn</name>
+		<description>The Dragonborn subrace from Fizban's Treasury of Dragons</description>
+		<author url="http://https://dnd.wizards.com/products/treasury-dragons">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="subrace-dragonborn.xml" url="https://github.com/Mathius-gamgee/Aurora/blob/main/subrace-dragonborn.xml" />
+		</update>
+	</info>
 
+	<!-- Chromatic -->
+	<element name="Dragonborn (Chromatic)" type="Sub Race" source="Fizban's Treasury of Dragons" id="ID_WOTC_FToD_SUBRACE_DRAGONBORN_CHROMATIC">
+		<supports>Dragonborn</supports>
+		<description>
+			<p>You have a chromatic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits, as shown in the table.</p>
+		</description>
+		<sheet alt="Dragonborn (Chromatic)" display="false">
+			<description>Chromatic dragon ancestry</description>
+		</sheet>
+    <h4>DRAGONBORN TRAITS</h4>
+			<p>Your draconic heritage manifests in a variety of traits you share with other dragonborn.</p>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Choose one of: (a) Choose any +2; choose any other +1 (b) Choose three different +1.
+			<span class="feature">Chromatic Ancestry.</span>You have a chromatic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits, as shown in the table.
+			<br />
+			<span class="feature">Breath Weapon.</span>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+			<br />
+			<span class="feature">Damage Resistance.</span>You have resistance to the damage type associated with your Chromatic Ancestry.
+			<br />
+	    <span class="feature">Chromatic Warding.</span>Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Chromatic Ancestry. Once you use this trait, you can't do so again until you finish a long rest.
+      <br />    
+      <span class="feature">Languages.</span>You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.
+			<br />
+			</p>
+		</description>
+		<rules>
+      <select type="Racial Trait" name="Ability Score Increase (Dragonborn Chromatic)" supports="Dragonborn Chromatic" number="3"
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CHROMATIC_ANCESTRY" />
+			<select type="Race Variant" name="Dragonborn Variant" supports="Dragonborn" optional="true" />
+		</rules>
+	</element>
+	<element name="Chromatic Ancestry" type="Racial Trait" source="Fizban's Treasury of Dragons" id="ID_RACIAL_TRAIT_CHROMATIC_ANCESTRY">
+		<description>
+			<p>You have a chromatic dragon ancestor, granting you a special magical affinity. Choose one kind of dragon from the Chromatic Ancestry table. This determines the damage type for your other traits, as shown in the table.</p>
+			<h5>CHROMATIC ANCESTRY</h5>
+			<table>
+				<thead>
+					<tr><td>Dragon</td><td>Damage Type</td><td>Breath Weapon</td></tr>
+				</thead>
+				<tr><td>Black</td><td>Acid</td></tr>
+				<tr><td>Blue</td><td>Lightning</td></tr>
+				<tr><td>Green</td><td>Poison</td></tr>
+				<tr><td>Red</td><td>Fire</td></tr>
+				<tr><td>White</td><td>Cold</td></tr>
+			</table>
+		</description>
+		<rules>
+			<select type="Racial Trait" name="Chromatic Ancestry" supports="Chromatic Ancestry" />
+		</rules>
+	</element>
+  <element name="Breath Weapon" type="Racial Trait" source="Fizban's Treasury of Dragons" id="ID_RACIAL_TRAIT_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Chromatic Ancestry. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).			<p>When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level.</p>
+			<p>You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="value="proficiency"/long rest">
+			<description>Exhale destructive energy. Your breath weapon does {{breath-weapon:dice count}}d{{breath-weapon:dice size}} {{draconic-ancestry:damage type}} damage in a {{draconic-ancestry:breath}} DC {{breath-weapon:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="breath-weapon:dc" value="8" />
+			<stat name="breath-weapon:dc" value="constitution:modifier" />
+			<stat name="breath-weapon:dc" value="proficiency" />
+			<stat name="breath-weapon:dice size" value="10" bonus="dice" />
+			<stat name="breath-weapon:dice count" value="1" level="1" />
+			<stat name="breath-weapon:dice count" value="1" level="6" />
+			<stat name="breath-weapon:dice count" value="1" level="11" />
+			<stat name="breath-weapon:dice count" value="1" level="16" />
+		</rules>
+	</element>
+  
