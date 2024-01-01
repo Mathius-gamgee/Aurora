@@ -37,7 +37,7 @@
 		</description>
 		<rules>
       <select type="Racial Trait" name="Ability Score Increase (Dragonborn Chromatic)" supports="Dragonborn Chromatic" number="3"
-      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CHROMATIC_ANCESTRY" />
+      <select type="Racial Trait" id="ID_RACIAL_TRAIT_CHROMATIC_ANCESTRY" />
 			<select type="Race Variant" name="Dragonborn Variant" supports="Dragonborn" optional="true" />
 		</rules>
 	</element>
