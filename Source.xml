@@ -5,7 +5,7 @@
 			<file name="source.xml" url="https://https://github.com/Mathius-gamgee/Aurora/blob/main/Source.xml" />
 		</update>
 	</info>
-	<element name="Fizban's Treasury of Dragons" type="Source" source="Core" id="ID_WOTC_SOURCE_FIZBANS_TREASURY_OF_DRAGONS">
+	<element name="Fizban's-Treasury-of-Dragons" type="Source" source="Core" id="ID_WOTC_SOURCE_FIZBANS_TREASURY_OF_DRAGONS">
 		<description>
 			<![CDATA[<p>Discover how dragons embody magic across the worlds of D&D and how you can bring them to life at your table in this quintessential reference guide for the world’s greatest roleplaying game.</p>]]>
 		</description>
