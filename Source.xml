@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="source.xml" url="https://https://github.com/Mathius-gamgee/Aurora/blob/main/Source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/Source.xml" />
 		</update>
 	</info>
 	<element name="Fizban's-Treasury-of-Dragons" type="Source" source="Core" id="ID_WOTC_SOURCE_FIZBANS_TREASURY_OF_DRAGONS">
