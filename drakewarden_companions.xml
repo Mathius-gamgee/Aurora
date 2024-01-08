@@ -26,7 +26,7 @@
 			<set name="type">Beast</set>
 			<set name="size">Small</set>
 			<set name="alignment">unaligned</set>
-			<set name="challenge">1/2</set>
+			<set name="challenge">1/4</set>
 			<set name="actions">ID_WOTC_FTOD_COMPANION_ACTION_SMALL_DRAGON_BITE,ID_WOTC_FTOD_COMPANION_REACTION_SMALL_DRAGON_INFUSED_STRIKES</set>
 		</setters>
 		<rules>
