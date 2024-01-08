@@ -13,5 +13,8 @@
 
 		<!-- archetypes -->
     		<file name="ranger-drakewarden.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/ranger-drakewarden.xml" />
+
+		<!-- misc -->
+		<file name="drakewarden_companions.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/drakewarden_companions.xml" />
 	</files>
 </index>
