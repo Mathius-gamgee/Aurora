@@ -64,40 +64,24 @@
             <p class="indent">In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the drake can take any action of its choice, not just Dodge.</p>
             <p class="indent">The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.</p>
             <p class="indent">Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it.</p>
-            <h5>Drake Companion</h5>
-              <table>
-				      <thead>
-					      <tr><td><em>Small Dragon</em></td></tr>
-				      </thead>
-                <tr><td>Armor Class: 14 + PB (natural armor)</td></tr>
-                <tr><td>Hit Points: 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)</td></tr>
-                <tr><td>Speed: 40 ft.</td></tr>
-              <thead>
-                <tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
-              </thead>
-                <tr><td>16 (+3)</td><td>12 (+1)</td><td>15 (+2)</td><td>8 (-1)</td><td>14 (+2)</td><td>8 (-1)</td></tr>
-                <tr><td>Saving Throws: Dex +1 plus PB, Wis +2 plus PB</td></tr>
-                <tr><td>Damage Immunities: determined by the drake’s Draconic Essence trait</td></tr>
-                <tr><td>Senses: darkvision 60 ft., passive Perception 12</td></tr>
-                <tr><td>Languages: Draconic</td></tr>
-                <tr><td>Challenge: Proficiency Bonus (PB) equals your bonus</td></tr>
-                <tr><td>Draconic Essence. When you summon the drake, choose a damage type: acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity and the damage of its Infused Strikes trait.</td></tr>
-              <thead>
-                <tr><td>Actions</td></tr>
-              </thead>
-                <tr><td>Bite. Melee Weapon Attack: +3 plus PB to hit, reach 5 ft., one target. Hit: 1d6 plus PB piercing damage.</td></tr>
-              <thead>
-                <tr><td>Reactions</td></tr>
-              </thead>
-                <tr><td>Infused Strikes. When another creature within 30 feet of the drake that it can see hits a target with a weapon attack, the drake infuses the strike with its essence, causing the target to take an extra 1d6 damage of the type determined by its Draconic Essence.</td></tr>
-              </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description>
             <p>At 3rd level, as an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.</p>
             <p class="indent">Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it.</p>        
 	    </description>        
         </sheet>
+	<rules>
+		<select type="Companion" name="Drakewarden's Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+		<stat name="companion:ac" value="proficiency" />
+		<stat name="companion:attack" value="proficiency" />
+		<stat name="companion:damage" value="proficiency" />			
+		<stat name="additional:hp:max" value="level:ranger" />
+		<stat name="additional:hp:max" value="level:ranger" />
+		<stat name="additional:hp:max" value="level:ranger" />
+		<stat name="additional:hp:max" value="level:ranger" />
+		<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+	</rules>
     </element>
     <element name="Bond of Fang and Scale" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE">
         <description>
