@@ -25,24 +25,24 @@
 				        <tr><td>5</td><td>An ancient Draconic inscription on a standing stone empowered you when you read it aloud.</td></tr>
 				        <tr><td>6</td><td>You had a vivid dream of a mysterious figure accompanied by seven yellow canaries, who warned you of impending doom. When you awoke, your drake was there, watching you.</td></tr>
 			      </table>
-            <div element="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT" />
-            <div element="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION" />
-            <div element="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE" />
-            <div element="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH" />
-            <div element="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND" />
+            <div element="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT" />
+            <div element="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION" />
+            <div element="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE" />
+            <div element="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH" />
+            <div element="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND" />
         </description>
         <sheet>
             <description>Your connection to the natural world takes the form of a draconic spirit, which can manifest in physical form as a drake. As your powers grow, your drake grows as well, blossoming from a small four-legged companion to a majestic winged creature large and strong enough for you to ride. Along the way, you gain an increasing share of the awe-inspiring power of dragons.</description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT" level="3" />
-            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION" level="3" />
-            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE" level="7" />
-            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH" level="11" />
-            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND" level="15" />
+            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION" level="3" />
+            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE" level="7" />
+            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH" level="11" />
+            <grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND" level="15" />
         </rules>
     </element>
-    <element name="Draconic Gift" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT">
+    <element name="Draconic Gift" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRACONIC_GIFT">
         <description>
             <p>At 3rd level, the bond you share with your drake creates a connection to dragonkind, granting you understanding and empowering your presence.</p>       
             <p class="indent">You gain the following benefits:</p>
@@ -57,7 +57,7 @@
             <select type="Language" name="Language (Drakewarden)" supports="Standard||Exotic" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED"/>
         </rules>
     </element>
-    <element name="Drake Companion" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION">
+    <element name="Drake Companion" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKE_COMPANION">
         <description>
             <p>At 3rd level, as an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.</p>
             <p class="indent">The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying Drake Companion stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.</p>
@@ -83,7 +83,7 @@
 		<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
 	</rules>
     </element>
-    <element name="Bond of Fang and Scale" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE">
+    <element name="Bond of Fang and Scale" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_BOND_OF_FANG_AND_SCALE">
         <description>
             <p>At 7th level the bond you share with your drake intensifies, protecting you and stoking the drake’s fury. When you summon your drake, it grows wings on its back and gains a flying speed equal to its walking speed.</p>
             <p class="indent">In addition, while your drake is summoned, you and the drake gain the following benefits:</p>
@@ -94,14 +94,14 @@
           </ul> 
         </description>
     </element>
-    <element name="Drake's Breath" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH">
+    <element name="Drake's Breath" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_DRAKES_BREATH">
         <description>
             <p>At 11th level, as an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage (your choice doesn’t have to match your drake’s Draconic Essence). Each creature in the cone must make a Dexterity saving throw against your spell save DC, taking 8d6 damage on a failed save, or half as much damage on a successful one.</p>
             <p class="indent">This damage increases to 10d6 when you reach 15th level in this class.</p>
             <p class="indent">Once you use this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again.</p>
         </description>
     </element>
-    <element name="Perfected Bond" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND">
+    <element name="Perfected Bond" type="Archetype Feature" source="Fizban's Treasury of Dragons" id="ID_WOTC_FTOD_ARCHETYPEFEATURE_RANGER_DRAKEWARDEN_PERFECTED_BOND">
         <description>
             <p>At 15th level, your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits:</p>
           <ul>
