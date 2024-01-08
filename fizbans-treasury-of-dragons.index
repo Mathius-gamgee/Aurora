@@ -5,11 +5,11 @@
 		<description>Discover how dragons embody magic across the worlds of DND and how you can bring them to life at your table in this quintessential reference guide for the world’s greatest roleplaying game.Discover how dragons embody magic across the worlds of DND and how you can bring them to life at your table in this quintessential reference guide for the world’s greatest roleplaying game.</description>
 		<author url="http://https://dnd.wizards.com/products/treasury-dragons">Wizards of the Coast</author>
 		<update version="0.3.2">
-			<file name="Fizbans-treasury-of-dragons" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/Fizbans-treasury-of-dragons.index" />
+			<file name="Fizbans-treasury-of-dragons" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/fizbans-treasury-of-dragons.index" />
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/Source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/source.xml" />
 
 		<!-- archetypes -->
     		<file name="ranger-drakewarden.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/ranger-drakewarden.xml" />
