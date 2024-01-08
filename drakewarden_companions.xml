@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Drakewarden Companion</name>
+		<description>Companion for the Drakewarden archetype.</description>
+		<author url="https://dnd.wizards.com/products/treasury-dragons">Wizards of the Coast</author>
+		<update version="0.0.2">
+			<file name="drakewarden_companions.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Ape" type="Companion" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_APE">
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="ac">12</set>
+			<set name="hp">19 (3d8+6)</set>
+			<set name="speed">30 ft., climb 30 ft.</set>
+			<set name="languages">—</set>
+			<set name="skills">Athletics +5, Perception +3</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/2</set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_APE_MULTIATTACK,ID_WOTC_PHB_COMPANION_ACTION_APE_FIST,ID_WOTC_PHB_COMPANION_ACTION_APE_ROCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="19" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Multiattack" type="Companion Action" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_ACTION_APE_MULTIATTACK">
+		<description>
+			<p>The ape makes two fist attacks.</p>
+		</description>
+		<sheet>
+			<description>The ape makes two fist attacks.</description>
+		</sheet>
+	</element>
+	<element name="Fist" type="Companion Action" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_ACTION_APE_FIST">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</description>
+		</sheet>
+	</element>
+	<element name="Rock" type="Companion Action" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_ACTION_APE_ROCK">
+		<description>
+			<p>Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.</description>
+		</sheet>
+	</element>
