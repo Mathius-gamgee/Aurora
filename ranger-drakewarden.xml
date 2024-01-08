@@ -80,6 +80,7 @@
 		<stat name="additional:hp:max" value="level:ranger" />
 		<stat name="additional:hp:max" value="level:ranger" />
 		<stat name="additional:hp:max" value="level:ranger" />
+		<stat name="additional:hp:max" value="level:ranger" />
 		<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
 	</rules>
     </element>
