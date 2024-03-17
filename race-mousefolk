@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Mousefolk</name>
+    <description>Wotc homebrew of Mousefolk</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/GMCorsair">Wizards of the Coast</author>
+    <update version="0.0.5">
+      <file name="race-mousefolk.xml" url="https://raw.githubusercontent.com/Mathius-gamgee/Aurora/main/race-mousefolk.xml" />
+    </update>
+  </info>
+  <element name="Mousefolk" type="Race" source="GMCorsair" id="ID_WOTC_GMCORSAIR_RACE_MOUSEFOLK">
+    <description>
+      <p>The life of the Mousefolk is one spent close to the ground. With no great empires or kingdoms to call home, the Mousefolk spend their lives carving a place for themselves in the cities of the larger races or in the untamed wilds. They form tight-knit communities where every member is expected to contribute to the success of the whole. Some Mousefolk study a trade skill to support their families, while others use their natural agility and intellect for contract services.</p>
+            <h4>MOUSEFOLK TRAITS</h4>
+      <p>Your character shares the following traits with other Mousefolk.</p>
+      <p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 2.</p>
+      <p class="indent"><b><i>Age. </i></b>A Mousefolk reaches adulthood at the age of 5 and lives to be about 40 years old.</p>
+      <p class="indent"><b><i>Alignment. </i></b>Most Mousefolk are neutral, and tend towards good. They try to keep the conflicts of the other races at arm's length, but display remarkable ferocity when their friends, families, or communities are threatened. A reverence for nature and life is close to the heart of Mousefolk, and they are loath to take a life if it can be avoided. They prefer to live quiet and unassuming lives, giving honest work for honest pay.</p>
+      <p class="indent"><b><i>Size. </i></b>Mousefolk grow between 2 and 2 1/2 feet tall and weigh about 25 pounds. Your size is Small.</p>
+      <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 25 feet.</p>
+      <p class="indent"><b><i>Keen Senses. </i></b>You have proficiency in the Perception skill.</p>
+      <p class="indent"><b><i>Mousefolk Weapon training. </i></b>You have proficiency with the rapier, shortsword, shortbow, and handaxe.</p>
+      <p class="indent"><b><i>Nimble Dodge. </i></b>When attacked by an Attack of Opportunity, you may use your reaction to impose disadvantage on that attack.</p>
+      <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Squeak Speak. Mousefolk place great value on the written accounts of their legends and histories, and encourage everyone to keep journals and records of their deeds. Almost all Mousefolk speak Common to converse with the people on whose lands they dwell or through which they are traveling.</p>
+      <p class="indent"><b><i>Subrace. </i></b>The two main kinds of Mousefolk, Softpaw and Meadowgard, are more like closely related families than true subraces. Choose one of these subraces.</p>
+    </description>
+    <setters>
+      <set name="names" type="male">Softpaw, Meadowgard</set>
+      <set name="names" type="female">Softpaw, Meadowgard</set>
+      <set name="names-format">{{name}}</set>
+      <set name="height" modifier="2d4">2'6"</set>
+      <set name="weight" modifier="1d4">25 lb.</set>
+    </setters>
+    <rules>
+      <stat name="Dexterity" value="2"/>
+      <stat name="innate speed" value="25" bonus="base" />
+      <grant type="Size" id="ID_SIZE_SMALL" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_SQUEAK_SPEAK" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SENSES" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_GMCORSAIR_RACE_MOUSEFOLK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_GMCORSAIR_RACE_MOUSEFOLK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" requirements="!ID_WOTC_GMCORSAIR_RACE_MOUSEFOLK" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" requirements="!ID_WOTC_GMCORSAIR_RACE_MOUSEFOLK" />
+      <select type="Sub Race" name="Mousefolk Subrace" supports="Mousefolk" />
+    </rules>
+  </element>
+  <element name="Softpaw" type="Sub Race" source="GMCorsair" id="ID_WOTC_GMCORSAIR_SUB_RACE_SOFTPAW">
+    <supports>Mousefolk</supports>
+    <description>
+      <p class="flavor">As a Softpaw Mousefolk, you avoid the dangers of the untamed wilds for the security of civilization.</p>
+      <p>Your bookish nature gives you an edge in the arcane studies and a knack for trade skills and craft. The mark of the Softpaw is a seal of the utmost quality. A Softpaw's natural dexterity and keen intellect make them desirable contract thieves and infiltrators.y</p>
+      
+      <h4>SOFTPAW TRAITS</h4>
+      <p>Softpaw's have the following traits in common, in addition to the traits they share with other Mousefolk.</p>
+      <p class="indent"><b><i>Ability Score Increase. </i></b>Your Intelligence score increases by 1.</p>
+      <p class="indent"><b><i>Artistry. </i></b>You gain proficiency with one type of artisan's tools or one musical instrument.</p>
+      <p class="indent"><b><i>Squirm. </i></b>You can move through tiny sized spaces as if you were tiny size.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="Intelligence" value="1"/>
+      <grant type="Racial Trait" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_SOFTPAW_ARTISTRY" />
+      <grant type="Racial Trait" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_SOFTPAW_SQUIRM" />
+    </rules>
+  </element>
+  <element name="Artistry" type="Racial Trait" source="GMCorsair" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_SOFTPAW_ARTISTRY">
+    <description>
+      <p>You gain proficiency with one type of artisan's tools or one musical instrument.</p>
+    </description>
+    <sheet display="false">
+      <description>You gain proficiency with one type of artisan's tools or one musical instrument.</description>
+    </sheet>
+    <rules>
+      <select type="Proficiency" name="Tool or Musical instrument" supports="Tool||Instrument"/>
+    </rules>
+  </element>
+  <element name="Squirm" type="Racial Trait" source="GMCorsair" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_SOFTPAW_SQUIRM">
+    <description>
+      <p>You can move through tiny sized spaces as if you were tiny size.</p>
+    </description>
+    <sheet display="false">
+      <description>You can move through tiny sized spaces as if you were tiny size.</description>
+    </sheet>
+  </element>
+</elements>
+  <element name="Meadowgard" type="Sub Race" source="GMCorsair" id="ID_WOTC_GMCORSAIR_SUB_RACE_MEADOWGARD">
+    <supports>Mousefolk</supports>
+    <description>
+      <p class="flavor">As a Meadowgard Mousefolk, you make your living in the wilds. 
+      <p>You have keen senses, deep intuition, and a connection with nature that few other races can boast. The Meadowgard stand staunchly at the edge of civilization, knowing that their eyes are the first alarm and their body and blade are the last bulwark of countless others. They have an unwavering sense of duty and a lifetime of experience which keeps them sharp against the dangers of the world. With an Eider's blessing some Meadowgard leave the service of their clans to travel the world and record their journeys.</p>
+     
+      <h4>MEADOWGARD TRAITS</h4>
+      <p>Meadowgard have the following traits in common, in addition to the traits they share with other Mousefolk.</p>
+      <p class="indent"><b><i>Ability Score Increase. </i></b>Your Wisdom score increases by 1.</p>
+      <p class="indent"><b><i>Brave. </i></b>You have advantage on saving throws against being frightened.</p>
+      <p class="indent"><b><i>Speak With Small Beasts. </i></b>Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <stat name="wisdom" value="1"/>
+      <grant type="Racial Trait" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_MEADOWGARD_BRAVE" />
+      <grant type="Racial Trait" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_MEADOWGARD_SPEAK_WITH_SMALL_BEASTS" />
+    </rules>
+  </element>
+  <element name="Brave" type="Racial Trait" source="GMCorsair" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_MEADOWGARD_BRAVE">
+    <description>
+      <p>You have advantage on saving throws against being frightened.</p>
+    </description>
+    <sheet>
+      <description>You have advantage on saving throws against being frightened.</description>
+    </sheet>
+  </element>
+  <element name="Speak with small beasts" type="Racial Trait" source="GMCorsair" id="ID_WOTC_GMCORSAIR_RACIAL_TRAIT_MEADOWGARD_SPEAK_WITH_SMALL_BEASTS">
+    <description>
+      <p>Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.</p>
+    </description>
+    <sheet>
+      <description>Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts.</description>
+    </sheet>
+  </element>
+  <element name="Squeak speak" type="Language" source="GMCorsair" id="ID_LANGUAGE_SQUEAK_SPEAK">
+    <supports>Exotic</supports>
+    <description>
+      <p>Typically spoken by Mousefolk.</p>
+    </description>
+    <setters>
+      <set name="exotic">true</set>
+      <set name="speakers">Mousefolk</set>
+    </setters>
+  </element>
+</elements>
